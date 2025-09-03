@@ -1,0 +1,12 @@
+<section class="categories-index">
+  <header class="page-header">
+    <h1>Categories</h1>
+    <%= link_to "New Category", new_admin_category_path, class: "btn" %>
+  </header>
+
+  <ul>
+    <% @categories.each do |category| %>
+      <li><%= category.name %></li>
+    <% end %>
+  </ul>
+</section>
